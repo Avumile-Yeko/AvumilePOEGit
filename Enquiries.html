@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiries</title>
+    <!-- This is the heading of that appears in the URL-->
+</head>
+<body>
+   
+    <div class="navbar">
+        <a href="ZeroFive-Ten Home.html" target="_blank">home</a>
+        <a href="ZeroFive-Ten About.html" target="_blank">About Us</a>
+        <a href="ZeroFive-Ten Contact.html" target="-blank">Contact Us</a>
+        <a href="ZeroFive-Ten Products & Services.html" target="_blank">Products & Services</a>
+        <a href="Enquiries.html" target="_blank">Enquiries and FAQ</a>
+        <a href="ZeroFive-Ten FAQ.html" target="_blank">FAQ</a>
+        <!-- This is the code for the navigation bar and the linking for the website pages-->
+    </div>
+    <p><b><h2>Enquiries</h2></b></p>
+    <!-- This is the main heading of the website that appears at the top of the page -->
+    <p><b><h3>Your Tech, Your Way</h3></b></p>
+
+    <form action="submit_enquiry.php" method="post">
+        <table>
+            <tr>
+                <th>Field</th>
+                <th>Input</th>
+            </tr>
+            <tr>
+                <td>Full Name</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="tel" name="phone" required></td>
+            </tr>
+            <tr>
+                <td>Subject</td>
+                <td><input type="text" name="subject" required></td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td><textarea name="message" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Submit Enquiry</button>
+                </td>
+            </tr>
+        </table>
+        <!-- This is the code for the enquiry table with the customers full name, email, phone number, subject and the message-->
+    </form>
+</body>
+</html>
