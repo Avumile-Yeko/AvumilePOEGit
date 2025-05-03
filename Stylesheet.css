@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #32cd32;
+    --font-family: Roboto;
+    --font-size: 16px;
+    --margin: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+p {
+    font-family: Roboto;
+    font-size: var(--font-size);
+    color: #d8d9d6;
+    margin: var(--margin);
+}
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #27ae60;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: var(--margin);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: var(--font-family);
+    margin: var(--margin) 0;
+}
+input, textarea, select {
+    padding: 10px;
+    font-size: var(--font-size);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.navbar {
+    top: 0px;
+    background: #2d2d4f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px
+}
+.nav-links a {
+    text-decoration: double;
+    color: whitesmoke;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background: rgba(126, 4, 20, 0.788);
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #2d2d4f;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.content {
+    padding-top: 300px;
+    padding: 20px;
+    text-align: center;
+}
+.navbar a {
+    color: rgb(228, 228, 228);
+    padding: 4px 10px;
+    text-decoration: wavy;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: blanchedalmond;
+}
+body {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: whitesmoke;
+}
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}

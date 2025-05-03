@@ -5,21 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiries</title>
     <!-- This is the heading of that appears in the URL-->
+    <link rel="stylesheet" href="Stylesheet.css">
+    <!-- This is the link to the CSS stylesheet that is used for the styling of the website-->
+     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("Images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg");
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            text-align: center; 
+        }
+        table {
+            width: 60%;
+            margin: auto;
+            border-collapse: collapse;
+            background: rgba(126, 4, 20, 0.788);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 9px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px; 
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #218838;
+        }
+     </style>
 </head>
 <body>
-   
-    <div class="navbar">
-        <a href="ZeroFive-Ten Home.html" target="_blank">home</a>
-        <a href="ZeroFive-Ten About.html" target="_blank">About Us</a>
-        <a href="ZeroFive-Ten Contact.html" target="-blank">Contact Us</a>
-        <a href="ZeroFive-Ten Products & Services.html" target="_blank">Products & Services</a>
-        <a href="Enquiries.html" target="_blank">Enquiries and FAQ</a>
-        <a href="ZeroFive-Ten FAQ.html" target="_blank">FAQ</a>
+
+    <nav class="navbar">
+        <div class="logo"><img src="Images/ZFT Logo.jpeg" alt="ZeroFive-Ten Logo" width="70" height="70"></img></div>
+        <ul class="nav-links">
+            <li><a href="ZeroFive-Ten Home.html" target="_blank">Home</a></li>
+            <li><a href="ZeroFive-Ten About.html" target="_blank">About Us</a></li>
+            <li><a href="ZeroFive-Ten Contact.html" target="_blank">Contact Us</a></li>
+            <li><a href="ZeroFive-Ten Products & Services.html" target="_blank">Products & Services</a></li>
+            <li><a href="Enquiries.html" target="_blank">Enquiries and FAQ</a></li>
+            <li><a href="ZeroFive-Ten FAQ.html" target="_blank">FAQ</a></li>
+        </ul>
         <!-- This is the code for the navigation bar and the linking for the website pages-->
-    </div>
-    <p><b><h2>Enquiries</h2></b></p>
-    <!-- This is the main heading of the website that appears at the top of the page -->
-    <p><b><h3>Your Tech, Your Way</h3></b></p>
+    </nav>
+
+    <header class="hero">
+        <h1>Send us an Enquiry</h1>
+        <h3>We are here to help you with your tech needs</h3>
+    </header>
+    <!-- This is the header of the website that appears at the top of the page -->
 
     <form action="submit_enquiry.php" method="post">
         <table>
@@ -55,5 +116,10 @@
         </table>
         <!-- This is the code for the enquiry table with the customers full name, email, phone number, subject and the message-->
     </form>
+    <footer>
+        <p>&copy; 2025 ZeroFive-Ten Technologies. All rights reserved.</p>
+        <p>Follow us on social media: Facebook - Twitter - Instagram</p>
+    </footer>
+    <!-- This is the footer of the website that appears at the bottom of the page-->
 </body>
 </html>
