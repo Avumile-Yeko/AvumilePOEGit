@@ -8,17 +8,18 @@
     --margin: 20px;
 }
 h1, h2, h3, h4, h5, h6 {
+    /* These are the stylings for the headings */
     font-family: Montserrat;
     color: var(--primary-color);
     margin-bottom: 10px;
 }
-p {
+p { /* These are the stylings for the paragraphs */
     font-family: Roboto;
     font-size: var(--font-size);
     color: #d8d9d6;
     margin: var(--margin);
 }
-button {
+button { /* These are the stylings for the buttons */
     background-color: var(--secondary-color);
     color: white;
     padding: 5px 10px;
@@ -26,13 +27,13 @@ button {
     border-radius: 5px;
     font-family: var(--font-family);
     font-size: var(--font-size);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    cursor: pointer; /* This is the cursor that will be used when hovering over the button */
+    transition: background-color 0.3s ease; /* This is the transition that will be used when hovering over the button */
 }
 button:hover {
-    background-color: #27ae60;
+    background-color: #27ae60; 
 }
-img {
+img { /* These are the stylings for the images */
     max-width: 100%;
     height: auto;
     border-radius: 8px;
