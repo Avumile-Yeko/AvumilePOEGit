@@ -128,5 +128,23 @@ The website now adapts correctly to:
 This ensures an optimized experience across devices, improves readability, and maintains the structure and design integrity of the website.
 
 ---
+## Part 1 corrections on proposals
+I corrected my main proposal as instructed on the comments of my part 1. I added a design and user experience, adding the fonts, grid cards, background colors and background images. 
+I also fixed the sitemap and made the about section with the rest of the pages. 
+I referenced the information, both intext and full referencing Havard style. 
+I also added a new reference for the mission and vision statements
+## 📚 References
+
+1. Companies and Intellectual Property Commission (2024). *Company fees and forms*. [https://www.cipc.co.za/?page_id=3804](https://www.cipc.co.za/?page_id=3804). Accessed 20 March 2025.
+
+2. OpenAI (2025). *Logo of a Technology company [ZFT Logo.jpeg].* Created using ChatGPT. [https://chatgpt.com/](https://chatgpt.com/). Accessed 18 April 2025.
+
+3. Ozdem, G. (2011). *An analysis of the mission and vision statements on the strategic plans of higher education institutions*. *Educational Sciences: Theory and Practice*, 11(4), 1887–1894.
+
+4. Parmenter, D. (2015). *Key performance indicators: Developing, implementing, and using winning KPIs*. John Wiley & Sons.
+
+5. Squarespace (2025). *Squarespace.com*. [https://www.squarespace.com/](https://www.squarespace.com/). Accessed 21 March 2025.
+
+6. Thelwall, M. (2000). *Effective websites for small and medium‐sized enterprises*. *Journal of Small Business and Enterprise Development*, 7(2), 149–159.
 
 
