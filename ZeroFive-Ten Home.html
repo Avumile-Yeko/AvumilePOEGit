@@ -98,7 +98,18 @@
             </section>
 
             <footer>
-                <p>&copy; 2025 ZeroFive-Ten Technologies. All rights reserved.</p>
+                <p>
+                    <script>
+                        var theDate = new Date();
+                        document.write ("&copy; " +
+                        theDate.getFullYear())
+                        document.write(" ZeroFive-Ten Technologies. All Rights Reserved - Last modified: ")
+                        var theModifiedDate = new
+                        Date (document.lastModified)
+                        document.write (theModifiedDate.toDateString())
+                    </script>
+                    <br>Powered by "Sharp-Sharp" Web Hosting
+                </p>
                 <p>Follow us on social media: Facebook - Twitter - Instagram</p>
                 <!-- This is the footer of the website and the copyright information -->
             </footer>

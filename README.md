@@ -147,4 +147,10 @@ I also added a new reference for the mission and vision statements
 
 6. Thelwall, M. (2000). *Effective websites for small and medium‐sized enterprises*. *Journal of Small Business and Enterprise Development*, 7(2), 149–159.
 
+## Part 3 
 
+1. I created a JavaScript file, an external JS file, that was meant to make the website more interactive, I added animations and made the cards on the websites appear in an animated style. 
+
+2. I added a back to the top button just before the footer of the website
+
+3. I added a "Date modified" on the footer, which houses a date that automatically adjusts. I also integrated the external JS file to the 6 main pages. 
