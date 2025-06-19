@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("Images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .content {
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+        .message-box {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            margin: auto;
+            width: 60%;
+            border-radius: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .home-btn {
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+        .home-btn:hover {
+            background-color: #218838;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><img src="Images/ZFT Logo.jpeg" alt="ZeroFive-Ten Logo" width="70" height="70"></div>
+        <ul class="nav-links">
+            <li><a href="ZeroFive-Ten Home.html">Home</a></li>
+            <li><a href="ZeroFive-Ten About.html">About Us</a></li>
+            <li><a href="ZeroFive-Ten Contact.html">Contact Us</a></li>
+            <li><a href="ZeroFive-Ten Products & Services.html">Products & Services</a></li>
+            <li><a href="Enquiries.html">Enquiries</a></li>
+            <li><a href="ZeroFive-Ten FAQ.html">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="message-box">
+            <h1>Thank You!</h1>
+            <p>Your enquiry has been received. We’ll get back to you as soon as possible.</p>
+            <a href="ZeroFive-Ten Home.html" class="home-btn">Return to Home</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <script>
+                var theDate = new Date();
+                document.write("&copy; " + theDate.getFullYear())
+                document.write(" ZeroFive-Ten Technologies. All Rights Reserved - Last modified: ")
+                var theModifiedDate = new Date(document.lastModified)
+                document.write(theModifiedDate.toDateString())
+            </script>
+            <br>Powered by "Sharp-Sharp" Web Hosting
+        </p>
+        <p>Follow us on social media: Facebook - Twitter - Instagram</p>
+    </footer>
+</body>
+</html>

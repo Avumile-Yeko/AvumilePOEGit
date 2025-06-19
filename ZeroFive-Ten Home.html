@@ -11,7 +11,7 @@
                 body {
                     margin: 0;
                     padding: 0;
-                    background-image: url("Images/george-prentzas-SRFG7iwktDk-unsplash.jpg");
+                    background-image: url("Images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg");
                     /* This is the background image of the website */
                 }
             </style>
@@ -96,6 +96,7 @@
                     </div>
                 </div>
             </section>
+            <button id="topBtn" title="Go to top">↑</button>
 
             <footer>
                 <p>
@@ -108,11 +109,27 @@
                         Date (document.lastModified)
                         document.write (theModifiedDate.toDateString())
                     </script>
-                    <br>Powered by "Sharp-Sharp" Web Hosting
+                    <br>Powered by "Sharp-Sharp" Web Hosting</br>
                 </p>
                 <p>Follow us on social media: Facebook - Twitter - Instagram</p>
                 <!-- This is the footer of the website and the copyright information -->
             </footer>
+            <!-- JAVASCRIPT FOR INTERACTIVITY -->
+            <script src="Interactive elements.js"></script>
+            
+            <script>
+                const text = "Welcome to ZeroFive-Ten";
+                let index = 0;
+                function typeWriter() {
+                    if (index < text.length) {
+                        document.querySelector("header h1").textContent += text.charAt(index);
+                        index++;
+                        setTimeout(typeWriter, 100);
+                    }
+                }
+                document.querySelector("header h1").textContent = ""; // Clear existing text
+                typeWriter(); // Start typing effect
+            </script>
         </body>
     </html>
 </html>

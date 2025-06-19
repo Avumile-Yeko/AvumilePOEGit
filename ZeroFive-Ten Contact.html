@@ -31,11 +31,11 @@
     <!-- This is the navigation bar of the website and the linking of the website pages -->
 
     <header class="hero">
-        <h1>Your Tech, Your Way</h1>
+        <h1>How Can You Contact Us</h1>
     </header>
     <!-- This is the main heading of the website --> 
 
-    <section id="Contact US" class="section">
+    <section id="contact-us" class="section">
         <!-- Section is a HTML5 semantic tag, and the class attribute will link the section will link this part with a CSS code later -->
         <h2>Contact Us</h2>
         <div class="grid">
@@ -46,32 +46,80 @@
             </div>
         </div>
     </section>
-    <section id="Visit Us" class="section">
+    <section id="visit-us" class="section">
         <h2>Store Locations</h2>
         <div class="grid">
             <div class="card">
-                <h3>Find Us At</h3>
+                <h3>East London Branch</h3>
                 <p><b>21 Oxford Street, East London, 5201</b></p>
+                <iframe
+                    src="https://www.google.com/maps?q=21+Oxford+Street,+East+London,+5201&output=embed"
+                    width="100%"
+                    height="300"
+                    style="border: 0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="card">
+                <h3>Port Elizabeth Branch</h3>
                 <p><b>7 Cape Road, Port Elizabeth, 6001</b></p>
+                <iframe 
+                    src="https://www.google.com/maps?q=7+Cape+Road,+Port+Elizabeth,+6001&output=embed"
+                    width="100%"
+                    height="300"
+                    style="border: 0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
     </section>
-    <section id="Social Media" class="section">
+    <section id="social-media" class="section">
         <h2>Our Socials</h2>
         <div class="grid">
            <div class="card">
             <h3>Hit Us Up</h3>
-            <p><b>Instagram: @ZeroFive10</b></p>
+            <p><b>Instagram: <a href="" @ZeroFive10</b></p>
             <p><b>X: @ZeroFive10_Tech</b></p>
             <p><b>Facebook: ZeroFive10_Tech</b></p>
            </div>
         </div>
     </section>
-    <!-- This is the section of the website that will show the contact information of the business -->
-     <footer>
-        <p>&copy; 2025 ZeroFive-Ten Technologies. All rights reserved</p>
-        <p>Follow us on social media: Facebook - Twitter - Instagram</p>
-        <!-- This is the footer of the website that will show the copyright information and the social media links -->
-     </footer>
+
+            <!-- This is the footer of the website that will show the copyright information and the social media links -->
+            <footer>
+                <p>
+                    <script>
+                        var theDate = new Date();
+                        document.write ("&copy; " +
+                        theDate.getFullYear())
+                        document.write(" ZeroFive-Ten Technologies. All Rights Reserved - Last modified: ")
+                        var theModifiedDate = new
+                        Date (document.lastModified)
+                        document.write (theModifiedDate.toDateString())
+                    </script>
+                    <br>Powered by "Sharp-Sharp" Web Hosting</br>
+                </p>
+                <p>Follow us on social media: Facebook - Twitter - Instagram</p>
+            </footer> 
+    
+     <script src="Interactive elements.js"></script>
+
+    <script>
+        const text = "How Can You Contact Us";
+        let index = 0;
+        function typeWriter() {
+            if (index < text.length) {
+                document.querySelector("header h1").textContent += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        document.querySelector("header h1").textContent = ""; // Clear existing text
+        typeWriter(); // Start typing effect
+    </script>
 </body>  
 </html>

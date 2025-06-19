@@ -101,10 +101,43 @@
             </div>
         </section>
         <!-- This is the section of the website that will show the frequently asked questions and the answers to them -->
-        <footer>
-            <p>&copy; 2025 ZeroFive-Ten Technologies. All rights reserved.</p>
-            <p>Follow us on social media: Facebook - Twitter - Instagram</p>
-            <!-- This is the footer of the website that will show the copyright information and the social media links -->
-        </footer>   
+
+         <!-- BACK TO TOP BUTTON -->
+        <button id="topBtn" title="Go to top">↑</button>
+        <!-- This is the button that will take the user back to the top of the page when clicked -->
+
+        <!-- This is the footer of the website that will show the copyright information and the social media links -->
+         <footer>
+                <p>
+                    <script>
+                        var theDate = new Date();
+                        document.write ("&copy; " +
+                        theDate.getFullYear())
+                        document.write(" ZeroFive-Ten Technologies. All Rights Reserved - Last modified: ")
+                        var theModifiedDate = new
+                        Date (document.lastModified)
+                        document.write (theModifiedDate.toDateString())
+                    </script>
+                    <br>Powered by "Sharp-Sharp" Web Hosting</br>
+                </p>
+                <p>Follow us on social media: Facebook - Twitter - Instagram</p>
+            </footer> 
+      
+        <!-- JAVASCRIPT FOR INTERACTIVITY -->
+        <script src="Interactive elements.js"></script>
+
+        <script>
+            const text = "Frequently Asked Questions";
+            let index = 0;
+            function typeWriter() {
+                if (index < text.length) {
+                    document.querySelector("header h1").textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, 100);
+                }
+            }
+            document.querySelector("header h1").textContent = ""; // Clear existing text
+            typeWriter(); // Start typing effect
+        </script>
 </body>
 </html>

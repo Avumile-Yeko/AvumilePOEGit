@@ -1,107 +1,141 @@
-<!doctype html>
-<html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Products & Services</title>
-            <!-- This the heading that will show in the URL -->
-            <link rel="stylesheet" href="Stylesheet.css">
-            <!-- This is the link to the CSS stylesheet that is used for the styling of the website -->
-             <style>
-                body {
-                    margin: 0;
-                    padding: 0;
-                    background-image: url("Images/umberto-jXd2FSvcRr8-unsplash.jpg");
-                    /* This is the background image of the website */
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Products & Services</title>
+        <link rel="stylesheet" href="Stylesheet.css">
+    </head>
+
+    <body>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar">
+            <div class="logo"><img src="Images/ZFT Logo.jpeg" alt="ZeroFive-Ten Logo" width="80" height="80"></div>
+            <ul class="nav-links">
+            <li><a href="ZeroFive-Ten Home.html" target="_blank">Home</a></li>
+            <li><a href="ZeroFive-Ten About.html" target="_blank">About Us</a></li>
+            <li><a href="ZeroFive-Ten Products & Services.html" target="_blank">Products & Services</a></li>
+            <li><a href="ZeroFive-Ten Contact.html" target="_blank">Contact Us</a></li>
+            <li><a href="Enquiries.html">Enquiries</a></li>
+            <li><a href="ZeroFive-Ten FAQ.html" target="_blank">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <!-- HEADER -->
+        <header class="hero">
+            <h1><b>Our Products & Services</b></h1>
+        </header>
+
+        <!-- PRODUCTS -->
+        <section id="products" class="section">
+            <h2>Our Products</h2>
+            <div class="grid">
+            <div class="card">
+                <img src="Images/sdl-sanjaya-VBVtNgkA3ak-unsplash.jpg" alt="High-End PCs">
+                <h3>High-End PCs</h3>
+                <p>Top-performance computers for gaming, design, and AI applications.</p>
+                <button class="buy-btn">View Details</button>
+            </div>
+            <div class="card">
+                <img src="Images/onur-binay-4Ykxp_t4i08-unsplash.jpg" alt="Custom-Built PCs">
+                <h3>Custom-Built PCs</h3>
+                <p>Tailored to your needs with the latest technology.</p>
+                <button class="buy-btn">Customize Now</button>
+            </div>
+            <div class="card">
+                <img src="Images/andrea-de-santis-h0h3gpAK4D0-unsplash.jpg" alt="Premium Laptops">
+                <h3>Laptops</h3>
+                <p>Premium laptops for work, gaming, and everyday use.</p>
+                <button class="buy-btn">Shop Laptops</button>
+            </div>
+            <div class="card">
+                <img src="Images/jay-zhang-ZByWaPXD2fU-unsplash.jpg" alt="Computer Accessories">
+                <h3>Accessories</h3>
+                <p>Keyboards, mice, monitors, and more high-quality peripherals.</p>
+                <button class="buy-btn">Browse Accessories</button>
+            </div>
+            </div>
+        </section>
+
+        <!-- SERVICES WITH ACCORDION -->
+        <section id="services" class="section">
+            <h2>Our Services</h2>
+            <div class="grid">
+            <div class="card">
+                <img src="Images/michael-soledad-B4GwdlgTh5Y-unsplash.jpg" alt="Home Office Setup">
+                <h3>Home Office Setup</h3>
+                <p>Complete solutions for your home office, from furniture to IT infrastructure.</p>
+            </div>
+            <div class="card">
+                <img src="Images/toa-heftiba-_UIVmIBB3JU-unsplash.jpg" alt="IT support">
+                <h3>IT Support</h3>
+                <p>Technical assistance to keep your systems running smoothly.</p>
+            </div>
+            <div class="card">
+                <img src="Images/shubham-dhage-VTCZpimskSQ-unsplash.jpg" alt="AI Rendering & Simulations">
+                <h3>AI Rendering & Simulations</h3>
+                <p>Advanced AI-driven solutions for rendering and simulations.</p>
+            </div>
+            <div class="card">
+                <img src="Images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Web Development">
+                <h3>Software Development</h3>
+                <p>First class website building, and maintaining for startups and big companies.</p>
+            </div>
+            <div class="card">
+                <img src="Images/jakub-zerdzicki-We56jns_zLE-unsplash.jpg" alt="Smart Home Automation">
+                <h3>Smart Home Automation</h3>
+                <p>Bring your house into the 21st century with AI-driven smart home automation.</p>
+            </div>
+            <div class="card">
+                <img src="Images/george-prentzas-SRFG7iwktDk-unsplash.jpg" alt="Cybersecurity">
+                <h3>Cybersecurity</h3>
+                <p>Protect yourself and your business from hackers and malware of all kinds.</p>
+            </div>
+            <div class="card">
+                <img src="Images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg" alt="Networking Solutions">
+                <h3>Enterprise IT Solutions</h3>
+                <p>Custom IT solutions for businesses of all sizes.</p>
+            </div>
+            </div>
+        </section>
+
+        <!-- BACK TO TOP BUTTON -->
+        <button id="topBtn" title="Go to top">↑</button>
+
+        <!-- This is the footer of the website that will show the copyright information and the social media links -->
+        <footer>
+            <p>
+                <script>
+                    var theDate = new Date();
+                    document.write ("&copy; " +
+                    theDate.getFullYear())
+                    document.write(" ZeroFive-Ten Technologies. All Rights Reserved - Last modified: ")
+                    var theModifiedDate = new
+                    Date (document.lastModified)
+                    document.write (theModifiedDate.toDateString())
+                </script>
+                <br>Powered by "Sharp-Sharp" Web Hosting</br>
+            </p>
+            <p>Follow us on social media: Facebook - Twitter - Instagram</p>
+        </footer> 
+
+
+
+        <script src="Interactive elements.js"></script>
+
+        <script>
+            const text = "Products & Services";
+            let index = 0;
+            function typeWriter() {
+                if (index < text.length) {
+                    document.querySelector("header h1").textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, 100);
                 }
-             </style>
-        </head>
-        <body>
-            <nav class="navbar">
-                <div class="logo"><img src="Images/ZFT Logo.jpeg" alt="ZeroFive-Ten Logo" width="80" height="80"></img></div>
-                <!-- This is the logo of the business that will be displayed on the navigation bar -->
-                <ul class="nav-links">
-                    <li><a href="ZeroFive-Ten Home.html" target="_blank">Home</a></li>
-                    <li><a href="ZeroFive-Ten About.html" target="_blank">About Us</a></li>
-                    <li><a href="ZeroFive-Ten Products & Services.html" target="_blank">Products & Services</a></li>
-                    <li><a href="ZeroFive-Ten Contact.html" target="_blank">Contact Us</a></li>
-                    <li><a href="Enquiries.html">Enquiries</a></li>
-                    <li><a href="ZeroFive-Ten FAQ.html" target="_blank">FAQ</a></li>
-                    <!-- This is the navigation bar and the link for all the website pages -->
-                </ul>
-            </nav>
+            }
+            document.querySelector("header h1").textContent = ""; // Clear existing text
+            typeWriter(); // Start typing effect
+        </script>
 
-            <header class="hero">
-                <h1><b>Our Products & Services</b></h1>
-                <!-- This is the main header of the web page that will be displayed at the top of the page -->
-            </header>
-        
-            <section id="products" class="section">
-                <!-- Section is a HTML5 semantic tag, and the class attribute will link the section will link this part with a CSS code later -->
-                <h2>Our Products</h2>
-                <div class="grid">
-                    <!-- This is the grid that will be used to display the products and services that are on offer -->
-                    <div class="card">
-                        <h3>High-End PCs</h3>
-                        <p>Top-performance computers for gaming, design, and AI applications.</p>
-                    </div>
-                    <div class="card">
-                        <!-- This is the card that will be used to display the products and services that are on offer -->
-                        <h3>Custom-Built PCs</h3>
-                        <p>Tailored to your needs with the latest technology.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Laptops</h3>
-                        <p>Premium laptops for work, gaming, and everyday use.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Accessories</h3>
-                        <p>Keyboards, mice, monitors, and more high-quality peripherals.</p>
-                    </div>
-                    <!-- The code for the cards that will have all the products and services that are on offer -->
-                </div>
-            </section>
-
-                <section id="services" class="section">
-                    <h2>Our Services</h2>
-                    <div class="grid">
-                        <div class="card">
-                            <h3>Home Office Setup</h3>
-                            <p>Complete solutions for your home office, from furniture to IT infrastructure.</p>
-                        </div>
-                        <div class="card">
-                            <h3>IT Support</h3>
-                            <p>Technical assistance to keep your systems running smoothly.</p>
-                        </div>
-                        <div class="card">
-                            <h3>AI Rendering & Simulations</h3>
-                            <p>Advanced AI-driven solutions for rendering and simulations.</p>
-                        </div>
-                        <div class="card">
-                            <h3>Software Development</h3>
-                            <p>First class website building, and maintaining for startups and big companies</p>
-                        </div>
-                        <div class="card">
-                            <h3>Smart Home automation</h3>
-                            <p>Bring your house into the 21st century with AI driven smart home automation</p>
-                        </div>
-                        <div class="card">
-                            <h3>Cybersecurity</h3>
-                            <p>Protect yourself and your business from hackers and malware of all kind</p>
-                        </div>
-                        <div class="card">
-                            <h3>Enterprise IT Solutions</h3>
-                            <p>Custom IT solutions for businesses of all sizes</p>
-                        </div>
-                    </div>
-                </section>
-                <!-- This is the section that will have all the services that are on offer -->
-            <footer>
-                <p>&copy; 2025 ZeroFive-Ten Technologies. All rights reserved.</p>
-                <p>Follow us on social media: Facebook - Twitter - Instagram</p>
-                <!-- This is the footer of the website and the copyright information -->
-            </footer>
-        </body>
-    </html>
+    </body>
 </html>

@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <meta name="description" content="Get in touch with ZeroFive-Ten Technologies for your tech support and service enquiries.">
+    <meta name="keywords" content="tech support, ZeroFive-Ten, enquiries, technology services, contact form">
+    <meta name="author" content="ZeroFive-Ten Technologies">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiries</title>
     <!-- This is the heading of that appears in the URL-->
@@ -47,7 +52,6 @@
         }
         button {
             display: block;
-            width: 100%;
             padding: 10px;
             background: #28a745;
             color: white;
@@ -82,7 +86,7 @@
     </header>
     <!-- This is the header of the website that appears at the top of the page -->
 
-    <form action="submit_enquiry.php" method="post">
+    <form id="enquiryForm">
         <table>
             <tr>
                 <th>Field</th>
@@ -90,23 +94,23 @@
             </tr>
             <tr>
                 <td>Full Name</td>
-                <td><input type="text" name="name" required></td>
+                <td><input type="text" name="name" placeholder="Your Full Name" aria-label="Full Name" required></td>
             </tr>
             <tr>
                 <td>Email</td>
-                <td><input type="email" name="email" required></td>
+                <td><input type="email" name="email" placeholder="Email address" aria-label="Email address" required></td>
             </tr>
             <tr>
                 <td>Phone Number</td>
-                <td><input type="tel" name="phone" required></td>
+                <td><input type="tel" name="phone" placeholder="Cellphone Number" aria-label="Phone Number" required></td>
             </tr>
             <tr>
                 <td>Subject</td>
-                <td><input type="text" name="subject" required></td>
+                <td><input type="text" name="subject" placeholder="Subject of your message?" aria-label="Subject of your message?" required></td>
             </tr>
             <tr>
                 <td>Message</td>
-                <td><textarea name="message" rows="4" required></textarea></td>
+                <td><textarea name="message" rows="4" placeholder="What is your message?" aria-label="What is your message?" required></textarea></td>
             </tr>
             <tr>
                 <td colspan="2">
@@ -116,10 +120,49 @@
         </table>
         <!-- This is the code for the enquiry table with the customers full name, email, phone number, subject and the message-->
     </form>
-    <footer>
-        <p>&copy; 2025 ZeroFive-Ten Technologies. All rights reserved.</p>
-        <p>Follow us on social media: Facebook - Twitter - Instagram</p>
-    </footer>
-    <!-- This is the footer of the website that appears at the bottom of the page-->
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="topBtn" title="Go to top">↑</button>
+
+    <!-- This is the footer of the website that will show the copyright information and the social media links -->
+            <footer>
+                <p>
+                    <script>
+                        var theDate = new Date();
+                        document.write ("&copy; " +
+                        theDate.getFullYear())
+                        document.write(" ZeroFive-Ten Technologies. All Rights Reserved - Last modified: ")
+                        var theModifiedDate = new
+                        Date (document.lastModified)
+                        document.write (theModifiedDate.toDateString())
+                    </script>
+                    <br>Powered by "Sharp-Sharp" Web Hosting</br>
+                </p>
+                <p>Follow us on social media: Facebook - Twitter - Instagram</p>
+            </footer> 
+
+            <script>
+                document.getElementById("enquiryForm").addEventListener("submit", function(e) {
+                    e.preventDefault();
+                    window.location.href = "thankyou.html"; // Redirect to Thank You page
+                });
+            </script>
+    
+    <!-- JAVASCRIPT FOR INTERACTIVITY -->
+    <script src="Interactive elements.js"></script>
+
+    <script>
+        const text = "Send us an Enquiry";
+        let index = 0;
+        function typeWriter() {
+            if (index < text.length) {
+                document.querySelector("header h1").textContent += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        document.querySelector("header h1").textContent = ""; // Clear existing text
+        typeWriter(); // Start typing effect
+    </script>
 </body>
 </html>
