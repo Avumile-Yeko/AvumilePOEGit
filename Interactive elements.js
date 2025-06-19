@@ -48,5 +48,40 @@
             lightboxModal.style.display = "none";
         }
     });
-    
+
+    // Live search for products/services cards and highlighting the searched text in the cards
+    const searchInput = document.getElementById("searchInput");
+
+    searchInput.addEventListener("keyup", () => {
+        const filter = searchInput.value.toLowerCase();
+        const cards = document.querySelectorAll(".card");
+
+        cards.forEach(card => {
+            const text = card.textContent.toLowerCase();
+
+            // Reset highlights
+            const titleEl = card.querySelector("h3");
+            const descEl = card.querySelector("p");
+            const originalTitle = titleEl.getAttribute("data-original") || titleEl.textContent;
+            const originalDesc = descEl.getAttribute("data-original") || descEl.textContent;
+
+            if (text.includes(filter)) {
+                card.style.display = "block";
+
+                // Highlight in title
+                const highlightedTitle = originalTitle.replace(new RegExp(filter, 'gi'), match => `<mark>${match}</mark>`);
+                titleEl.innerHTML = highlightedTitle;
+                titleEl.setAttribute("data-original", originalTitle);
+
+                // Highlight in description
+                const highlightedDesc = originalDesc.replace(new RegExp(filter, 'gi'), match => `<mark>${match}</mark>`);
+                descEl.innerHTML = highlightedDesc;
+                descEl.setAttribute("data-original", originalDesc);
+
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+
 

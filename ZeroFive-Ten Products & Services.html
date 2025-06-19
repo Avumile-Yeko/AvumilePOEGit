@@ -39,6 +39,11 @@
             <h1><b>Our Products & Services</b></h1>
         </header>
 
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for products or services..." />
+            <button id="searchButton">Search</button>
+        </div>
+
         <!-- PRODUCTS -->
         <section id="products" class="section">
             <h2>Our Products</h2>
@@ -149,7 +154,7 @@
             document.querySelector("header h1").textContent = ""; // Clear existing text
             typeWriter(); // Start typing effect
         </script>
-        
+
         <div id="lightboxModal" class="lightbox-modal">
             <span class="lightbox-close">&times;</span>
             <img class="lightbox-content" id="lightboxImage" alt="Expanded View">
