@@ -2,7 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <!-- This is the metadata of the website that will be used for the SEO and the description of the website -->
+        <meta name="description" content="Explore our range of high-end PCs, custom-built computers, premium laptops, and top-notch IT services.">
+        <meta name="keywords" content="high-end PCs, custom-built computers, premium laptops, IT services, home office setup, smart home automation, AI rendering, cybersecurity, software development">
+        <meta name="author" content="ZeroFive-Ten Technologies">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- Open Graph Tags -->
+        <meta property="og:title" content="ZeroFive-Ten Products & Services" />
+        <meta property="og:description" content="Smart solutions for your home and business. Explore our tech services, software, premium laptops, top-notch IT services, and more." />
+        <meta property="og:image" content="Images/ZFT Logo.jpeg" />
+        <meta property="og:url" content="https://www.zerofive-ten.com/products-services" />
+        <meta property="og:type" content="website" />
+
+        <!-- This is the heading of that appears in the URL -->
         <title>Products & Services</title>
         <link rel="stylesheet" href="Stylesheet.css">
     </head>
@@ -31,25 +44,25 @@
             <h2>Our Products</h2>
             <div class="grid">
             <div class="card">
-                <img src="Images/sdl-sanjaya-VBVtNgkA3ak-unsplash.jpg" alt="High-End PCs">
+                <img src="Images/sdl-sanjaya-VBVtNgkA3ak-unsplash.jpg" alt="High-End PCs" class="lightbox-img">
                 <h3>High-End PCs</h3>
                 <p>Top-performance computers for gaming, design, and AI applications.</p>
                 <button class="buy-btn">View Details</button>
             </div>
             <div class="card">
-                <img src="Images/onur-binay-4Ykxp_t4i08-unsplash.jpg" alt="Custom-Built PCs">
+                <img src="Images/onur-binay-4Ykxp_t4i08-unsplash.jpg" alt="Custom-Built PCs" class="lightbox-img">
                 <h3>Custom-Built PCs</h3>
                 <p>Tailored to your needs with the latest technology.</p>
                 <button class="buy-btn">Customize Now</button>
             </div>
             <div class="card">
-                <img src="Images/andrea-de-santis-h0h3gpAK4D0-unsplash.jpg" alt="Premium Laptops">
+                <img src="Images/andrea-de-santis-h0h3gpAK4D0-unsplash.jpg" alt="Premium Laptops" class="lightbox-img">
                 <h3>Laptops</h3>
                 <p>Premium laptops for work, gaming, and everyday use.</p>
                 <button class="buy-btn">Shop Laptops</button>
             </div>
             <div class="card">
-                <img src="Images/jay-zhang-ZByWaPXD2fU-unsplash.jpg" alt="Computer Accessories">
+                <img src="Images/jay-zhang-ZByWaPXD2fU-unsplash.jpg" alt="Computer Accessories" class="lightbox-img">
                 <h3>Accessories</h3>
                 <p>Keyboards, mice, monitors, and more high-quality peripherals.</p>
                 <button class="buy-btn">Browse Accessories</button>
@@ -62,37 +75,37 @@
             <h2>Our Services</h2>
             <div class="grid">
             <div class="card">
-                <img src="Images/michael-soledad-B4GwdlgTh5Y-unsplash.jpg" alt="Home Office Setup">
+                <img src="Images/michael-soledad-B4GwdlgTh5Y-unsplash.jpg" alt="Home Office Setup" class="lightbox-img">
                 <h3>Home Office Setup</h3>
                 <p>Complete solutions for your home office, from furniture to IT infrastructure.</p>
             </div>
             <div class="card">
-                <img src="Images/toa-heftiba-_UIVmIBB3JU-unsplash.jpg" alt="IT support">
+                <img src="Images/toa-heftiba-_UIVmIBB3JU-unsplash.jpg" alt="IT support" class="lightbox-img">
                 <h3>IT Support</h3>
                 <p>Technical assistance to keep your systems running smoothly.</p>
             </div>
             <div class="card">
-                <img src="Images/shubham-dhage-VTCZpimskSQ-unsplash.jpg" alt="AI Rendering & Simulations">
+                <img src="Images/shubham-dhage-VTCZpimskSQ-unsplash.jpg" alt="AI Rendering & Simulations" class="lightbox-img">
                 <h3>AI Rendering & Simulations</h3>
                 <p>Advanced AI-driven solutions for rendering and simulations.</p>
             </div>
             <div class="card">
-                <img src="Images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Web Development">
+                <img src="Images/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg" alt="Web Development" class="lightbox-img">
                 <h3>Software Development</h3>
                 <p>First class website building, and maintaining for startups and big companies.</p>
             </div>
             <div class="card">
-                <img src="Images/jakub-zerdzicki-We56jns_zLE-unsplash.jpg" alt="Smart Home Automation">
+                <img src="Images/jakub-zerdzicki-We56jns_zLE-unsplash.jpg" alt="Smart Home Automation" class="lightbox-img">
                 <h3>Smart Home Automation</h3>
                 <p>Bring your house into the 21st century with AI-driven smart home automation.</p>
             </div>
             <div class="card">
-                <img src="Images/george-prentzas-SRFG7iwktDk-unsplash.jpg" alt="Cybersecurity">
+                <img src="Images/george-prentzas-SRFG7iwktDk-unsplash.jpg" alt="Cybersecurity" class="lightbox-img">
                 <h3>Cybersecurity</h3>
                 <p>Protect yourself and your business from hackers and malware of all kinds.</p>
             </div>
             <div class="card">
-                <img src="Images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg" alt="Networking Solutions">
+                <img src="Images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg" alt="Networking Solutions" class="lightbox-img">
                 <h3>Enterprise IT Solutions</h3>
                 <p>Custom IT solutions for businesses of all sizes.</p>
             </div>
@@ -136,6 +149,10 @@
             document.querySelector("header h1").textContent = ""; // Clear existing text
             typeWriter(); // Start typing effect
         </script>
-
+        
+        <div id="lightboxModal" class="lightbox-modal">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightboxImage" alt="Expanded View">
+        </div>
     </body>
 </html>

@@ -147,10 +147,31 @@ I also added a new reference for the mission and vision statements
 
 6. Thelwall, M. (2000). *Effective websites for small and medium‐sized enterprises*. *Journal of Small Business and Enterprise Development*, 7(2), 149–159.
 
+
+
 ## Part 3 
+
+## ** Improvement from feedback received from part 2** 
+I Added images on my products and services page and these images will be a visual representation of what we offer at ZeroFive-10 Technologies. 
+
+## Part 3 Additions
 
 1. I created a JavaScript file, an external JS file, that was meant to make the website more interactive, I added animations and made the cards on the websites appear in an animated style. 
 
 2. I added a back to the top button just before the footer of the website
 
 3. I added a "Date modified" on the footer, which houses a date that automatically adjusts. I also integrated the external JS file to the 6 main pages. 
+
+4. I added images to the products and services. Images that show what we offer at the IT store
+
+5. I added Meta tags to the pages for better Search engine optimization SEO
+
+6. I created a sitemap for the website. I tried to download an extension that would debugg the sitemap but nothing worked so I will just trust that the sitemap is good. 
+
+7. I created another page. This is the page that the user will be redirected to when they fill out the enquiry form. This page follows the same style and form of the main pages and all it will show is "Thank you. Our dedicated team will contact you within 24 business hours
+
+8. I changed some of the background images of the Home and About Us page because they made it hard to read the text on the pages. I changed it to some darker images. 
+
+9. I added a typewriter style animation to the pages. This made the main headings appear like their being typed out when you open the pages. I had to embedd the JS for this part into each of the pages instead of put it into the external JS file.
+
+10. I added an
