@@ -174,4 +174,13 @@ I Added images on my products and services page and these images will be a visua
 
 9. I added a typewriter style animation to the pages. This made the main headings appear like their being typed out when you open the pages. I had to embedd the JS for this part into each of the pages instead of put it into the external JS file.
 
-10. I added an
+10. In order the optimize the loading speeds of the website, I made sure that the images I used in the pages are not too big in terms of their megebyte sizes, this helps the website operate more faster and smoothly. 
+I also made sure the images use a modern format like .webp instead of jpeg. webp images use less space as compared to jpg.
+
+11. To increase the security of the website I added a meta tag that will protect the website from being used in phishing attacks. It does this by preventing the site from being embedded in an iframe. 
+<meta http-equiv="X-Frame-Options" content="DENY">
+I also added a meta tag that is called content security policy (CSP) which is used to stop cross-site scripting attacks
+
+Because the website will be collecting data (Enquiries.html), the website would need to validate on client-side using JS. It would also need to validate and sanitize on server-side. Furthermore, it would need to prevent SQL injection or email header injection. 
+
+My website will not allow any file uploads because that compromizes the safety of the website as we would have to scan each individual file for malware. 

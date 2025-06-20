@@ -18,12 +18,20 @@
         <!-- This is the heading of that appears in the URL -->
         <title>Products & Services</title>
         <link rel="stylesheet" href="Stylesheet.css">
+         <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    background-image: url("Images/umberto-jXd2FSvcRr8-unsplash.webp");
+                    /* This is the background image of the page */
+                }
+            </style>
     </head>
 
     <body>
         <!-- NAVIGATION BAR -->
         <nav class="navbar">
-            <div class="logo"><img src="Images/ZFT Logo.jpeg" alt="ZeroFive-Ten Logo" width="80" height="80"></div>
+            <div class="logo"><img src="Images/ZFT Logo.webp" alt="ZeroFive-Ten Logo" width="80" height="80"></div>
             <ul class="nav-links">
             <li><a href="ZeroFive-Ten Home.html" target="_blank">Home</a></li>
             <li><a href="ZeroFive-Ten About.html" target="_blank">About Us</a></li>
@@ -55,19 +63,19 @@
                 <button class="buy-btn">View Details</button>
             </div>
             <div class="card">
-                <img src="Images/onur-binay-4Ykxp_t4i08-unsplash.jpg" alt="Custom-Built PCs" class="lightbox-img">
+                <img src="Images/onur-binay-4Ykxp_t4i08-unsplash.webp" alt="Custom-Built PCs" class="lightbox-img">
                 <h3>Custom-Built PCs</h3>
                 <p>Tailored to your needs with the latest technology.</p>
                 <button class="buy-btn">Customize Now</button>
             </div>
             <div class="card">
-                <img src="Images/andrea-de-santis-h0h3gpAK4D0-unsplash.jpg" alt="Premium Laptops" class="lightbox-img">
+                <img src="Images/andrea-de-santis-h0h3gpAK4D0-unsplash.webp" alt="Premium Laptops" class="lightbox-img">
                 <h3>Laptops</h3>
                 <p>Premium laptops for work, gaming, and everyday use.</p>
                 <button class="buy-btn">Shop Laptops</button>
             </div>
             <div class="card">
-                <img src="Images/jay-zhang-ZByWaPXD2fU-unsplash.jpg" alt="Computer Accessories" class="lightbox-img">
+                <img src="Images/jay-zhang-ZByWaPXD2fU-unsplash.webp" alt="Computer Accessories" class="lightbox-img">
                 <h3>Accessories</h3>
                 <p>Keyboards, mice, monitors, and more high-quality peripherals.</p>
                 <button class="buy-btn">Browse Accessories</button>
@@ -85,12 +93,12 @@
                 <p>Complete solutions for your home office, from furniture to IT infrastructure.</p>
             </div>
             <div class="card">
-                <img src="Images/toa-heftiba-_UIVmIBB3JU-unsplash.jpg" alt="IT support" class="lightbox-img">
+                <img src="Images/toa-heftiba-_UIVmIBB3JU-unsplash.webp" alt="IT support" class="lightbox-img">
                 <h3>IT Support</h3>
                 <p>Technical assistance to keep your systems running smoothly.</p>
             </div>
             <div class="card">
-                <img src="Images/shubham-dhage-VTCZpimskSQ-unsplash.jpg" alt="AI Rendering & Simulations" class="lightbox-img">
+                <img src="Images/shubham-dhage-VTCZpimskSQ-unsplash.webp" alt="AI Rendering & Simulations" class="lightbox-img">
                 <h3>AI Rendering & Simulations</h3>
                 <p>Advanced AI-driven solutions for rendering and simulations.</p>
             </div>
@@ -110,7 +118,7 @@
                 <p>Protect yourself and your business from hackers and malware of all kinds.</p>
             </div>
             <div class="card">
-                <img src="Images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg" alt="Networking Solutions" class="lightbox-img">
+                <img src="Images/alex-kotliarskyi-QBpZGqEMsKg-unsplash.webp" alt="Networking Solutions" class="lightbox-img">
                 <h3>Enterprise IT Solutions</h3>
                 <p>Custom IT solutions for businesses of all sizes.</p>
             </div>
@@ -142,6 +150,7 @@
         <script src="Interactive elements.js"></script>
 
         <script>
+            // Typewriter effect for the header
             const text = "Products & Services";
             let index = 0;
             function typeWriter() {

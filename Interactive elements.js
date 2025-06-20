@@ -83,5 +83,8 @@
             }
         });
     });
-
-
+    // Example JS client-side validation
+    const name = document.getElementById('name').value.trim();
+    if (!/^[a-zA-Z\s]+$/.test(Fullname)) {
+        alert('Please enter a valid name.');
+    }

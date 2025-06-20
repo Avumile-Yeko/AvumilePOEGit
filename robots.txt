@@ -1,0 +1,23 @@
+# Allow all search engines to crawl everything by default
+User-agent: *
+
+# Allow indexing of all main pages
+Allow: /index.html
+Allow: /ZeroFive-Ten%20About.html
+Allow: /ZeroFive-Ten%20Products%20&%20Services.html
+Allow: /ZeroFive-Ten%20Contact.html
+Allow: /ZeroFive-Ten%20FAQ.html
+Allow: /Enquiries.html
+
+# Disallow sensitive or admin folders (if they exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Disallow temporary or backup files
+Disallow: /*.bak$
+Disallow: /*.tmp$
+Disallow: /*.zip$
+
+# Point to your sitemap
+Sitemap: https://www.zerofiveten.com/sitemap.xml
